@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Data Types Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Data Types Example</h1>
+
+    <script>
+        // Primitive Data Types
+        var stringVar = "Hello, World!";  // String
+        var numberVar = 42;               // Number
+        var booleanVar = true;            // Boolean
+        var nullVar = null;               // Null
+        var undefinedVar;                 // Undefined
+
+        // Displaying primitive data types
+        console.log("String: " + stringVar);
+        console.log("Number: " + numberVar);
+        console.log("Boolean: " + booleanVar);
+        console.log("Null: " + nullVar);
+        console.log("Undefined: " + undefinedVar);
+
+        // Complex Data Types
+        var arrayVar = [1, 2, 3, 4, 5];         // Array
+        var objectVar = { key: "value" };      // Object
+        var functionVar = function() {         // Function
+            return "This is a function.";
+        };
+
+        // Displaying complex data types
+        console.log("Array: " + JSON.stringify(arrayVar));
+        console.log("Object: " + JSON.stringify(objectVar));
+        console.log("Function: " + functionVar());
+    </script>
+
+</body>
+</html>

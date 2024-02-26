@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Conditional Statements Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Conditional Statements Example</h1>
+
+    <script>
+        // Example 1: if statement
+        var isRaining = true;
+
+        if (isRaining) {
+            console.log("It's raining. Don't forget your umbrella!");
+        } else {
+            console.log("No need for an umbrella. Enjoy the weather!");
+        }
+
+        // Example 2: if-else if-else statement
+        var time = 14;
+
+        if (time < 12) {
+            console.log("Good morning!");
+        } else if (time >= 12 && time < 18) {
+            console.log("Good afternoon!");
+        } else {
+            console.log("Good evening!");
+        }
+
+        // Example 3: switch statement
+        var dayOfWeek = 3;
+        var dayName;
+
+        switch (dayOfWeek) {
+            case 1:
+                dayName = "Monday";
+                break;
+            case 2:
+                dayName = "Tuesday";
+                break;
+            case 3:
+                dayName = "Wednesday";
+                break;
+            case 4:
+                dayName = "Thursday";
+                break;
+            case 5:
+                dayName = "Friday";
+                break;
+            default:
+                dayName = "Weekend";
+        }
+
+        console.log("Today is " + dayName);
+    </script>
+
+</body>
+</html>

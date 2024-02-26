@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Global Variables Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Global Variables Example</h1>
+
+    <script>
+        // Declaring global variables
+        var globalVar1 = "I am a global variable";
+        var globalVar2 = 42;
+
+        // Function that uses global variables
+        function displayGlobalVariables() {
+            // Accessing global variables inside the function
+            console.log("Global Variable 1: " + globalVar1);
+            console.log("Global Variable 2: " + globalVar2);
+
+            // Modifying global variables inside the function
+            globalVar1 = "Modified global variable";
+            globalVar2 = globalVar2 * 2;
+        }
+
+        // Displaying global variables before calling the function
+        console.log("Before Function Call:");
+        console.log("Global Variable 1: " + globalVar1);
+        console.log("Global Variable 2: " + globalVar2);
+
+        // Calling the function
+        displayGlobalVariables();
+
+        // Displaying global variables after calling the function
+        console.log("After Function Call:");
+        console.log("Global Variable 1: " + globalVar1);
+        console.log("Global Variable 2: " + globalVar2);
+    </script>
+
+</body>
+</html>

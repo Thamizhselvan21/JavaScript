@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions Example</title>
+</head>
+<body>
+
+    <h1>JavaScript Functions Example</h1>
+
+    <script>
+        // Example 1: Basic Function
+        function greet(name) {
+            return "Hello, " + name + "!";
+        }
+
+        var greetingMessage = greet("John");
+        console.log("Example 1:", greetingMessage);
+
+        // Example 2: Function Expression
+        var multiply = function (a, b) {
+            return a * b;
+        };
+
+        var result = multiply(5, 3);
+        console.log("Example 2:", result);
+
+        // Example 3: Arrow Function
+        var add = (num1, num2) => num1 + num2;
+
+        var sum = add(8, 4);
+        console.log("Example 3:", sum);
+
+        // Example 4: Default Parameters
+        function power(base, exponent = 2) {
+            return Math.pow(base, exponent);
+        }
+
+        var squared = power(4);
+        var cubed = power(2, 3);
+
+        console.log("Example 4 - Squared:", squared);
+        console.log("Example 4 - Cubed:", cubed);
+
+        // Example 5: Recursive Function
+        function factorial(n) {
+            if (n === 0 || n === 1) {
+                return 1;
+            } else {
+                return n * factorial(n - 1);
+            }
+        }
+
+        var factResult = factorial(5);
+        console.log("Example 5 - Factorial:", factResult);
+    </script>
+
+</body>
+</html>
